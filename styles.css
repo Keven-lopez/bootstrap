@@ -1,0 +1,87 @@
+:root {
+    --color-primary: #F5F5F5;
+    --color-secondary: #333333;
+    --color-accent: #C2A14A;
+    --color-background: #1C1C1C;
+    --color-text: lightgray;
+    --font-heading: "Montserrat", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--color-background);
+    font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-weight: 800;
+}
+
+p{
+    color: var(--color-text);
+
+}
+
+header{
+    background: var(--color-background);
+}
+
+#navbutton{
+    background-color: var(--color-accent);
+}
+
+.container-fluid{
+    background-color: var(--color-primary);
+}
+
+
+.portfolio-section{
+    h1 {
+        color: var(--color-accent);
+        text-align: center;
+    }
+    h5{
+        color:var(--color-accent);
+        text-align: center;
+    }
+    p{
+        color: var(--color-primary);
+        text-align: left;
+    }
+}
+
+.list-group-item{
+    background: var(--color-secondary);
+    color: var(--color-text);
+    border-color: var(--color-accent);
+}
+
+.proyectos{
+    .card{
+        background: #333333;
+        border-color: var(--color-accent);
+        border-width: 3px;
+    }
+    p{
+    color: var(--color-text);
+        text-align: justify;
+    }
+}
+
+footer{
+    .container-fluid{
+        background: var(--color-secondary);
+    }
+    h2{
+        text-align: center;
+        color: var(--color-accent);
+    }
+    color: var(--color-text);
+}

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Bootstrap demo</title>
+</head>
+<body>
+<header id="header" class="container py-5">
+
+    <div class="text-center">
+
+        <img id="foto"
+                src="resources/me.jpg"
+                alt="Fotografía de perfil"
+                class="rounded-circle mb-3">
+
+        <h1>
+            Keven Ryan Lopez Pineda
+        </h1>
+
+        <p id="yay">
+            ...
+        </p>
+
+    </div>
+
+    <!-- Responsive Bootstrap Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
+
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                Portafolio
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button id="navbutton"
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biografia">Biografía</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profesional">Visión Profesional</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>
+<section id="biografia" class="container py-1 portfolio-section biografia">
+    <div class="title">
+        <h1>Biografía</h1>
+    </div>
+    <div id="bio_text" class="container m-2">
+        <p>this work test test guisgkjdaisjkfhaioushfiaskdsaagfsa</p>
+    </div>
+</section>
+<section id="habilidades" class="container py-1 portfolio-section habilidades">
+    <div class="title">
+        <h1>Habilidades y Intereses</h1>
+    </div>
+    <div>
+        <div id="hab_text" class="container m-2">
+            <p>this is an epic awesome list of my interests!</p>
+        </div>
+        <div class="preview">
+            <div class="row align-items-center ">
+                <div class="col-md-6 hab">
+                    <h5>
+                        Habilidades
+                    </h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">...</li>
+                        <li class="list-group-item">...</li>
+                        <li class="list-group-item">...</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="proyectos" class="container py-1 portfolio-section proyectos">
+    <h1>
+        Proyectos y Pasatiempos
+    </h1>
+    <p>a list of things that i'll put in later</p>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 proyectos">
+        <div class="col">
+            <div class="card h-100">
+
+                <img
+                        src="resources/springboot.png"
+                        alt="Springboot logo"
+                        class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        Proyecto de APIs con Springboot
+                    </h5>
+
+                    <p class="card-text">
+                        Este proyecto se enfoca en las llamadas API para crear, atender, y cancelar turnos. Tambien implementa RabbitMQ para enviar y consumir eventos, y Swagger para documentar los APIs.
+                    </p>
+                    <a href="https://github.com/Keven-lopez/ProyectoFinalPrograIII">Github Link</a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+
+                <img
+                        src="resources/git.png"
+                        alt="Logo Github"
+                        class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        BilingualCode Compiler
+                    </h5>
+
+                    <p class="card-text">
+                        Lenguaje de programación y compilador orientados a un código legible que se pueda escribir tanto en inglés como en español.
+                    </p>
+                    <a href="https://github.com/Keven-lopez/bilingualcode-compiler">Github Link</a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+
+                <img
+                        src="resources/piano.png"
+                        alt="Piano"
+                        class="card-img-top p-1">
+
+                <div class="card-body flex-column d-flex">
+
+                    <h5 class="card-title">
+                        Piano
+                    </h5>
+
+                    <p class="card-text">
+                        Uno de mis principales pasatiempos es tocar el piano. El audio incluido en esta tarjeta corresponde a una interpretación realizada por mí de "Wet Hands", una composición de C418 del videojuego "Minecraft".
+                    </p>
+                    <audio controls class="mt-auto align-items-center">
+                        <source src="resources/wet%20hands.m4a" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="profesional" class="container py-1 portfolio-section">
+    <h1>
+        Visión Profesional
+    </h1>
+    <p>
+        ...
+    </p>
+</section>
+<footer id="contacto">
+    <div class="container-fluid">
+        <h2>
+            Redes Sociales
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 pb-5 footer">
+            <div class="col py-1">
+                adighsfasd
+            </div>
+            <div class="col py-1">
+                adighsfasd
+            </div>
+            <div class="col py-1">
+                adighsfasd
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
