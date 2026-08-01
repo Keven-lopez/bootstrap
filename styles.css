@@ -29,8 +29,11 @@ p{
 
 }
 
-header{
-    background: var(--color-background);
+#header{
+    background: var(--color-secondary);
+    h2{
+        color: var(--color-secondary);
+    }
 }
 
 #navbutton{
@@ -38,7 +41,7 @@ header{
 }
 
 .container-fluid{
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
 }
 
 
